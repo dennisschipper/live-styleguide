@@ -1,18 +1,17 @@
 
+<% path = "/Users/dennis/Projects/live-styleguide/source/stylesheets/partials/pointer.scss" %>
+<% f = File.open(path) %>
 
+
+<h1>This file exists at: <span><%= path %></span></h1>
 
 <pre>
   <code class="language-scss">
-    .pointer {
-      position: relative;
 
-      &:before {
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-      }
-    }
+
+    <% f.each_line do |f| %>
+      <%= f.chomp %>
+    <% end %>
 
   </code>
 </pre>
