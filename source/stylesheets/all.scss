@@ -9,7 +9,8 @@
 body {
   font-family: "Source Sans Pro";
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
+  background: #f9f9f9;
 }
 
 p {
@@ -17,4 +18,5 @@ p {
   padding: 3px 0px;
 }
 
-@import 'partials/pointer'
+
+@import 'partials/container-pointers.scss'

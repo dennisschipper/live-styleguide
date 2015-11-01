@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid #468ccd;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+@mixin generate-pointer($posittion,$width, $background) {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: $width solid rgba(0, 0, 0, 0.0);
+  border-bottom: $width solid $background;
+}
+
+.with-pointer {
+  position: relative;//or absolute;
+
+  &:before {
+    top: -8px;
+    left: 50%;
+    margin-left: -4px;
+
+    @include generate-pointer(relative, 4px, #468ccd );
+  }
+}
