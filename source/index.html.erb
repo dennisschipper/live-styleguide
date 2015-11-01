@@ -1,3 +1,19 @@
+<section class="live-styleguide-header">
+  <%= image_tag 'project-icon.svg' %>
+  <h1>Live Styleguide</h1>
+</section>
+
+
+
+<%
+  file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_container-pointers.scss").read
+%>
+<div class="showcase">
+  <pre><code class="language-scss"><%= file %></code></pre>
+
+</div>
+
+
 <div class="current-file">
   This file is: <%= request.path %>
 </div>

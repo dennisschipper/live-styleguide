@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 15px;
   background: #f9f9f9;
@@ -25,6 +25,22 @@ h1, h2 {
 p {
   line-height: 1.4em;
   padding: 3px 0px;
+}
+
+.live-styleguide-header {
+  background: #333;
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  img {
+    margin-bottom: 10px;
+    width: 30px;
+  }
+}
+
+// Prism overwrites
+code[class*="language-"], pre[class*="language-"] {
+  font-size: 13px;
 }
 
 
