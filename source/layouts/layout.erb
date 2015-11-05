@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -9,10 +10,19 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
   </head>
 
-  <body class="<%= page_classes %>">
+  <%
+    page = "Articles"
+    page_descriptions = "Articles"
+  %>
+
+  <body class="<%= page %>">
+
+    <div class="styleguide-controls">
+      <a href="#">Style Guide pages</a>
+    </div>
 
     <div class="world">
-      <%= yield "./content.html" %>
+      <%= yield %>
     </div>
 
   </body>

@@ -1,3 +1,5 @@
+
+
 <nav class="breadcrumbs">
     <ul>
       <li><a href="#">Documentation</a></li>
@@ -7,18 +9,23 @@
 </nav>
 
 <article>
-  <header>
-    <h1>Creating a new project with extra users</h1>
-    <h2>An overview of superdocs and it's usage</h2>
-    <div class="article-meta">
-      By
-      <a href="#" class="user"><div class="avatar">KH</div>Kaylee Harper</a>, published on Aug 3rd, 2015
+  <div class="code-container">
+    <span class="reveal-code"></span>
+    <div class="code">
+      <%
+        file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/articles/_article.scss").read
+      %>
+      <pre><code class="language-scss"><%= file %></code></pre>
+
+
     </div>
-  </header>
+
+    <%= partial "pages/article/article-header.html" %>
+  </div>
 
   <p>When I first heard about <span class="marked-text">AngularJS it caught</span> my attention immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>
   <h3>Lorel isum</h3>
-  <p>When I first heard about AngularJS it caught my attention immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>
+  <p>When I first heard about <a href="#">AngularJS it caught my attention</a> immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>
   <p>While having a core framework to build on is great, it can also be intimidating and challenging to learn.</p>
   <hr>
 
