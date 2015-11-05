@@ -10,17 +10,7 @@
 
 <article>
   <div class="code-container">
-    <span class="reveal-code"></span>
-    <div class="code">
-      <%
-        file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/articles/_article.scss").read
-      %>
-      <pre><code class="language-scss"><%= file %></code></pre>
-
-
-    </div>
-
-    <%= partial "pages/article/article-header.html" %>
+    <%= partial "/pages/article/article-header.html" %>
   </div>
 
   <p>When I first heard about <span class="marked-text">AngularJS it caught</span> my attention immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>

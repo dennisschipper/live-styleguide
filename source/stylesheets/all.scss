@@ -16,8 +16,24 @@ p a:hover {
   // text-decoration: none;
 }
 
-p a:hover {
+
+p a {
   position: relative;
+  text-decoration: none;
+}
+
+p a:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #cecece;
+}
+
+p a:hover {
   text-decoration: none;
   &:after {
     content: "";
@@ -27,7 +43,7 @@ p a:hover {
     display: block;
     width: 100%;
     height: 2px;
-    background: #cecece;
+    background: #36b85e;
 
     animation: animate 0.5s ease-out 1;
   }
@@ -39,7 +55,7 @@ p a:hover {
 }
 
 .code-container {
-  display: none;
+  // display: none;
   // padding: 10px;
   // margin: 10px 0px;
   // border: 1px dashed #e7e3e3;
@@ -115,10 +131,7 @@ a {
   }
 }
 
-.world {
-  max-width: 1080px;
-  margin: 0 auto;
-}
+
 
 .tabs {
   display: block;
@@ -145,20 +158,23 @@ a {
 
 article {
   padding-left: 10px;
-  margin-top: 20px;
+  margin-top: 15px;
   header {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.2em;
 }
 
 h2 {
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 10px;
   color: #bbbbbb;
 }
 
@@ -314,6 +330,25 @@ hr {
   }
 
 }
+
+
+
+
+.world {
+  padding-left: 310px;
+}
+
+aside {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 300px;
+  background: #33373b;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
 
 
 //
