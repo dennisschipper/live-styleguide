@@ -1,3 +1,32 @@
+<section class="styleguide-checkboxes">
+  <span class="radio-container">
+    <span class="radio"></span> Great radio button action
+    <span class="radio selected"></span> Great radio button action
+  </span>
+
+  <%
+    file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_radio-buttons.scss").read
+  %>
+  <div class="showcase">
+    <pre><code class="language-scss"><%= file %></code></pre>
+  </div>
+</section>
+
+
+
+<section class="styleguide-checkboxes">
+  <span class="checkbox-container">
+    <span class="checkbox"><i class="fa fa-check"></i></span> Great checkbox action
+  </span>
+
+  <%
+    file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_checkbox.scss").read
+  %>
+  <div class="showcase">
+    <pre><code class="language-scss"><%= file %></code></pre>
+  </div>
+</section>
+
 <section class="live-styleguide-header">
   <%= image_tag 'project-icon.svg' %>
   <h1>Live Styleguide</h1>
@@ -10,7 +39,6 @@
 %>
 <div class="showcase">
   <pre><code class="language-scss"><%= file %></code></pre>
-
 </div>
 
 

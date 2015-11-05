@@ -1,0 +1,30 @@
+.radio {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 199px;
+  vertical-align: middle;
+  border: 2px solid #cecece;
+  background: #fff;
+  cursor: pointer;
+  margin-top: -2px;
+
+
+}
+
+.radio.selected {
+  &:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 199px;
+    background: #cecece;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
+  }
+}

@@ -1,0 +1,31 @@
+.styleguide-checkboxes {
+  padding: 50px;
+}
+
+.checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #cecece;
+  background: #fff;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.2em;
+  cursor: pointer;
+
+  i {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &:hover {
+    i {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+}

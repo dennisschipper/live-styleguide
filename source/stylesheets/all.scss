@@ -44,4 +44,9 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 
-@import 'partials/container-pointers.scss'
+@import 'partials/container-pointers.scss';
+
+
+
+@import 'partials/_checkbox.scss';
+@import 'partials/_radio-buttons.scss';
