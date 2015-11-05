@@ -1,48 +1,41 @@
-<section class="styleguide-checkboxes">
-  <span class="radio-container">
-    <span class="radio"></span> Great radio button action
-    <span class="radio selected"></span> Great radio button action
-  </span>
+<nav class="breadcrumbs">
+    <ul>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Getting Started</a></li>
+      <li><a href="#">Creating a new project with extra users</a></li>
+    </ul>
+</nav>
 
-  <%
-    file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_radio-buttons.scss").read
-  %>
-  <div class="showcase">
-    <pre><code class="language-scss"><%= file %></code></pre>
+<article>
+  <header>
+    <h1>Creating a new project with extra users</h1>
+    <h2>An overview of superdocs and it's usage</h2>
+    <div class="article-meta">
+      By
+      <a href="#" class="user"><div class="avatar">KH</div>Kaylee Harper</a>, published on Aug 3rd, 2015
+    </div>
+  </header>
+
+  <p>When I first heard about <span class="marked-text">AngularJS it caught</span> my attention immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>
+  <h3>Lorel isum</h3>
+  <p>When I first heard about AngularJS it caught my attention immediately because it appeared to offer a single framework that could be used to build a variety of dynamic, client-centric applications. After researching it more, my initial impressions were confirmed, and I was hooked. AngularJS includes a robust set of features and offers a way to break up code into modules, which is good for reuse, maintenance, and testability. It provides key features, such as support for DOM manipulation, animations, templating, two-way data binding, routing, history, Ajax, testing, and much more.</p>
+  <p>While having a core framework to build on is great, it can also be intimidating and challenging to learn.</p>
+  <hr>
+
+  <h3>File downloads</h3>
+  <div class="file-list">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="file-tag pdf">.pdf</span>document_file_download.pdf<span class="file-size">124kb</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="file-tag zip">.zip</span>another_file.zip<span class="file-size">124kb</span>
+          </a>
+        </li>
+      </ul>
   </div>
-</section>
-
-
-
-<section class="styleguide-checkboxes">
-  <span class="checkbox-container">
-    <span class="checkbox"><i class="fa fa-check"></i></span> Great checkbox action
-  </span>
-
-  <%
-    file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_checkbox.scss").read
-  %>
-  <div class="showcase">
-    <pre><code class="language-scss"><%= file %></code></pre>
-  </div>
-</section>
-
-<section class="live-styleguide-header">
-  <%= image_tag 'project-icon.svg' %>
-  <h1>Live Styleguide</h1>
-</section>
-
-
-
-<%
-  file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_container-pointers.scss").read
-%>
-<div class="showcase">
-  <pre><code class="language-scss"><%= file %></code></pre>
-</div>
-
-
-<div class="current-file">
-  This file is: <%= request.path %>
-</div>
-<%= partial "html/container-pointers/index.html" %>
+</article>

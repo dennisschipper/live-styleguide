@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+
+<%= partial "html/radio-buttons/radio-buttons.html" %>
+
+<%
+  file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_radio-buttons.scss").read
+%>
+
+<div class="showcase">
+  <pre><code class="language-scss"><%= file %></code></pre>
+</div>
+
+<section class="styleguide-checkboxes">
+  <span class="checkbox-container">
+    <span class="checkbox"><i class="fa fa-check"></i></span> Great checkbox action
+  </span>
+
+  <% file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_checkbox.scss").read %>
+  <div class="showcase">
+    <pre><code class="language-scss"><%= file %></code></pre>
+  </div>
+</section>
+
+<section class="live-styleguide-header">
+  <%= image_tag 'project-icon.svg' %>
+  <h1>Live Styleguide</h1>
+</section>
+
+
+
+<%
+  file = File.open("/Users/dennis/Projects/Mine/live-styleguide/source/stylesheets/partials/_container-pointers.scss").read
+%>
+<div class="showcase">
+  <pre><code class="language-scss"><%= file %></code></pre>
+</div>
+
+
+<div class="section section-tabs">
+  <ul class="tabs">
+    <li class="active">
+      <a href="#">I'm a tab</a>
+    </li>
+    <li>
+      <a href="#">I'm a tab</a>
+    </li>
+    <li>
+      <a href="#">I'm a tab</a>
+    </li>
+    <li>
+      <a href="#">I'm a tab</a>
+    </li>
+  </ul>
+</div>
+
+
+
+<div class="current-file">
+  This file is: <%= request.path %>
+</div>
+<%= partial "html/container-pointers/index.html" %>
