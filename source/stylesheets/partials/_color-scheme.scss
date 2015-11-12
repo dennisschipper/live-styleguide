@@ -1,0 +1,31 @@
+$background: #fefefe;
+$dark-background: #33373b;
+$text-color: #7c7979;
+$lighter-text-color: #cecece;
+$darker-text-color: #cecece;
+$paragraph-color: #7c7979;
+$link-color: #636363;
+
+$border-color: #eaeaeb;
+
+$marked-text-background: #fed961;
+
+// Some styleguide styles for the color scheme
+
+.color-block {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #cecece;
+
+  &.background { background: $background }
+  &.dark-background { background: $dark-background }
+  &.text-color { background: $text-color }
+  &.lighter-text-color { background: $lighter-text-color }
+  &.darker-text-color { background: $darker-text-color }
+  &.paragraph-color { background: $paragraph-color }
+  &.link-color { background: $link-color }
+  &.border-color { background: $border-color }
+
+
+}
