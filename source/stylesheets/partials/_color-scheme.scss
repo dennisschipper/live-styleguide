@@ -2,7 +2,7 @@ $background: #fefefe;
 $dark-background: #33373b;
 $text-color: #7c7979;
 $lighter-text-color: #cecece;
-$darker-text-color: #cecece;
+$darker-text-color: #333;
 $paragraph-color: #7c7979;
 $link-color: #636363;
 
@@ -12,8 +12,16 @@ $marked-text-background: #fed961;
 
 // Some styleguide styles for the color scheme
 
+.styleguide-color-blocks {
+  span {
+    display: inline-block;
+  }
+}
+
 .color-block {
   display: inline-block;
+  vertical-align: middle;
+  margin: 5px 5px 5px 0px;
   width: 35px;
   height: 35px;
   border: 1px solid #cecece;
